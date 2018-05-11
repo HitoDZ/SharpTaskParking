@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="346134c0-8ef6-405b-be8f-f3dbffe325a7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/SharpTask1/Parking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SharpTask1/Parking.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SharpTask1/Transaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SharpTask1/Transaction.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SharpTask1/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <marker date="1526061152587" expanded="true" signature="35:146" ph="{...}" />
+                <marker date="1526061152587" expanded="true" signature="64:144" ph="{...}" />
+                <marker date="1526061152587" expanded="true" signature="117:138" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Settings.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SharpTask1/Settings.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <folding>
+                <marker date="1526067602221" expanded="true" signature="55:692" ph="{...}" />
+                <marker date="1526067602221" expanded="true" signature="83:690" ph="{...}" />
+                <marker date="1526067602221" expanded="true" signature="299:675" ph="{...}" />
+                <marker date="1526067602221" expanded="true" signature="431:632" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Car.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SharpTask1/Car.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+              <folding>
+                <marker date="1526069313130" expanded="true" signature="35:490" ph="{...}" />
+                <marker date="1526069313130" expanded="true" signature="58:488" ph="{...}" />
+                <marker date="1526069313130" expanded="true" signature="262:482" ph="{...}" />
+                <marker date="1526069313130" expanded="true" signature="288:349" ph="{...}" />
+                <marker date="1526069313130" expanded="true" signature="381:459" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarType.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SharpTask1/CarType.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-171">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <folding>
+                <marker date="1526067187210" expanded="true" signature="6:100" ph="..." />
+                <marker date="1526067187210" expanded="true" signature="122:1130" ph="{...}" />
+                <marker date="1526067187210" expanded="true" signature="149:1128" ph="{...}" />
+                <marker date="1526067187210" expanded="true" signature="185:287" ph="{...}" />
+                <marker date="1526067187210" expanded="true" signature="325:404" ph="{...}" />
+                <marker date="1526067187210" expanded="true" signature="414:1122" ph="/* private static  Dictionary&lt;string,float&gt; carTypes; ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parking.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SharpTask1/Parking.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="121" column="9" lean-forward="true" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+              <folding>
+                <marker date="1526071984575" expanded="true" signature="6:109" ph="..." />
+                <marker date="1526071984575" expanded="true" signature="131:4273" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="158:4271" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="437:470" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="509:617" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="653:768" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="795:864" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="904:961" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="1212:1917" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="1255:1341" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="1358:1906" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="1393:1761" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="1448:1611" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="1636:1743" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="1797:1892" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="1956:2514" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="1982:2363" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="2067:2209" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="2230:2349" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="2407:2491" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="2541:3022" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="2626:2684" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="2820:2974" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="3058:3091" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="3120:4265" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="3169:4255" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="3345:3680" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="3743:3984" ph="{...}" />
+                <marker date="1526071984575" expanded="true" signature="4005:4241" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Transaction.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SharpTask1/Transaction.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding>
+                <marker date="1526071414720" expanded="true" signature="35:392" ph="{...}" />
+                <marker date="1526071414720" expanded="true" signature="66:390" ph="{...}" />
+                <marker date="1526071414720" expanded="true" signature="257:375" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/SharpTask1/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SharpTask1/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SharpTask1/Settings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SharpTask1/CarType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SharpTask1/Parking.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SharpTask1/Car.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SharpTask1/Transaction.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/SharpTask1/Program.cs" />
+        <option value="$PROJECT_DIR$/SharpTask1/CarType.cs" />
+        <option value="$PROJECT_DIR$/SharpTask1/Settings.cs" />
+        <option value="$PROJECT_DIR$/SharpTask1/Car.cs" />
+        <option value="$PROJECT_DIR$/SharpTask1/Transaction.cs" />
+        <option value="$PROJECT_DIR$/SharpTask1/Parking.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="SharpTask1 (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="SharpTask1 (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="SharpTask1" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/SharpTask1/bin/Debug/SharpTask1.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SharpTask1/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/SharpTask1/SharpTask1.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v3.5" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="346134c0-8ef6-405b-be8f-f3dbffe325a7" name="Default" comment="" />
+      <created>1526061056629</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1526061056629</updated>
+      <workItem from="1526061059249" duration="10896000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10896000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.5006935" side_tool="true" weight="0.33285302" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930653" weight="0.33285302" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.118791945" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" isUnityUI="false" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SharpTask1/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <marker date="1526061152587" expanded="true" signature="35:146" ph="{...}" />
+            <marker date="1526061152587" expanded="true" signature="64:144" ph="{...}" />
+            <marker date="1526061152587" expanded="true" signature="117:138" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SharpTask1/Car.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding>
+            <marker date="1526069313130" expanded="true" signature="35:490" ph="{...}" />
+            <marker date="1526069313130" expanded="true" signature="58:488" ph="{...}" />
+            <marker date="1526069313130" expanded="true" signature="262:482" ph="{...}" />
+            <marker date="1526069313130" expanded="true" signature="288:349" ph="{...}" />
+            <marker date="1526069313130" expanded="true" signature="381:459" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SharpTask1/Settings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <marker date="1526067602221" expanded="true" signature="55:692" ph="{...}" />
+            <marker date="1526067602221" expanded="true" signature="83:690" ph="{...}" />
+            <marker date="1526067602221" expanded="true" signature="299:675" ph="{...}" />
+            <marker date="1526067602221" expanded="true" signature="431:632" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SharpTask1/CarType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <marker date="1526067187210" expanded="true" signature="6:100" ph="..." />
+            <marker date="1526067187210" expanded="true" signature="122:1130" ph="{...}" />
+            <marker date="1526067187210" expanded="true" signature="149:1128" ph="{...}" />
+            <marker date="1526067187210" expanded="true" signature="185:287" ph="{...}" />
+            <marker date="1526067187210" expanded="true" signature="325:404" ph="{...}" />
+            <marker date="1526067187210" expanded="true" signature="414:1122" ph="/* private static  Dictionary&lt;string,float&gt; carTypes; ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SharpTask1/Transaction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <marker date="1526071414720" expanded="true" signature="35:392" ph="{...}" />
+            <marker date="1526071414720" expanded="true" signature="66:390" ph="{...}" />
+            <marker date="1526071414720" expanded="true" signature="257:375" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SharpTask1/Parking.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="121" column="9" lean-forward="true" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+          <folding>
+            <marker date="1526071984575" expanded="true" signature="6:109" ph="..." />
+            <marker date="1526071984575" expanded="true" signature="131:4273" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="158:4271" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="437:470" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="509:617" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="653:768" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="795:864" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="904:961" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="1212:1917" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="1255:1341" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="1358:1906" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="1393:1761" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="1448:1611" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="1636:1743" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="1797:1892" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="1956:2514" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="1982:2363" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="2067:2209" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="2230:2349" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="2407:2491" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="2541:3022" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="2626:2684" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="2820:2974" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="3058:3091" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="3120:4265" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="3169:4255" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="3345:3680" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="3743:3984" ph="{...}" />
+            <marker date="1526071984575" expanded="true" signature="4005:4241" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
