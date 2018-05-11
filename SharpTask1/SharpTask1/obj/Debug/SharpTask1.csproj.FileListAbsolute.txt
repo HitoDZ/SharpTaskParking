@@ -1,0 +1,5 @@
+D:\University\BinaryStudio\C#\1Task\SharpTaskParking\SharpTask1\SharpTask1\bin\Debug\SharpTask1.exe
+D:\University\BinaryStudio\C#\1Task\SharpTaskParking\SharpTask1\SharpTask1\bin\Debug\SharpTask1.pdb
+D:\University\BinaryStudio\C#\1Task\SharpTaskParking\SharpTask1\SharpTask1\obj\Debug\SharpTask1.csprojResolveAssemblyReference.cache
+D:\University\BinaryStudio\C#\1Task\SharpTaskParking\SharpTask1\SharpTask1\obj\Debug\SharpTask1.exe
+D:\University\BinaryStudio\C#\1Task\SharpTaskParking\SharpTask1\SharpTask1\obj\Debug\SharpTask1.pdb
