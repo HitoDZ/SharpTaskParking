@@ -8,6 +8,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Car.cs" t="Include" />
         <e p="CarType.cs" t="Include" />
+        <e p="Menu.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Parking.cs" t="Include" />
         <e p="Program.cs" t="Include" />

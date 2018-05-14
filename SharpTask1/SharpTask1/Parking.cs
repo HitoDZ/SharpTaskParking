@@ -3,15 +3,25 @@ using System;
 using System.Data.Common;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
+using System.Xml.Schema;
 
 namespace SharpTask1
 {
     public class Parking
     {
-        public int FreePlaces;
+        // Fields
+        Object locker = new Object();
+        static string path = System.IO.Directory.GetCurrentDirectory() + "\\Transaction.log";
+        public int freePlaces;
         private Settings _settings =new Settings();
         protected List<Transaction> listTransactions = new List<Transaction>();
+       
+        protected Dictionary<int, Car> CarList = new Dictionary<int, Car>();
+        public float Balance { get; set; }
+        protected Dictionary<int, float> debts = new Dictionary<int, float>();
         
+        // Singltone
         private static readonly Parking instance = new Parking();
         
         static  Parking()
@@ -19,11 +29,18 @@ namespace SharpTask1
             
         }
 
-        public string GetFreePlaces()
+        public int GetFreePlaces()
         {
-            var a = "There " + FreePlaces.ToString() + " places";
-            return a;
+            // ...
+            //var a = "There " + freePlaces.ToString() + " places";
+            return freePlaces;
         }
+
+        public int GetOccupiedPlaces()
+        {
+            return _settings.ParkingSpace - freePlaces;
+        }
+
 
         public string GetBalance()
         {
@@ -34,7 +51,7 @@ namespace SharpTask1
 
         private Parking()
         {
-            FreePlaces = _settings.ParkingSpace;
+            freePlaces = _settings.ParkingSpace;
         }
 
         public static Parking Instance
@@ -43,13 +60,11 @@ namespace SharpTask1
         }
         
         
-        public Dictionary<int, Car> CarList = new Dictionary<int, Car>();
-        public float Balance { get; set; }
-        protected Dictionary<int, float> debts = new Dictionary<int, float>();
+
 
         public void AddCar(Car car)
         {
-            if (FreePlaces <= 0)
+            if (freePlaces <= 0)
             {
                 Console.WriteLine("There no free place");
             }
@@ -62,11 +77,12 @@ namespace SharpTask1
                     {
                         
                         CarList.Add(car.CarId, car);
-                        FreePlaces -= 1;
+                        freePlaces -= 1;
+                        
                     }
                     else
                     {
-                        Console.WriteLine("Car is not valid");
+                        Console.WriteLine("Car is not valid");    
                     }
                 }
                 catch (Exception e)
@@ -84,7 +100,7 @@ namespace SharpTask1
                 {
                     
                     CarList.Remove(car.CarId);
-                    FreePlaces += 1;
+                    freePlaces += 1;
 
                 }
                 else
@@ -106,20 +122,52 @@ namespace SharpTask1
             {
                 sum += i.Pay;
             }
-            using (StreamWriter sw = new StreamWriter(System.IO.Directory.GetCurrentDirectory(), false, System.Text.Encoding.Default))
-
+            using (StreamWriter sw = new StreamWriter(path, true, System.Text.Encoding.Default))
             {
                 string text = DateTime.Now.ToString() + " - " + sum;
                 sw.WriteLine(text);
                     
             }
-            listTransactions.Clear();
+            listTransactions.Clear();// TODO: ask about transaction
+        }
+        public string TransactionLog()
+        {
+            try
+            {
+                string log;
+                using (StreamReader sr = new StreamReader(path))
+                {
+                    log = sr.ReadToEnd();
+                }
+              
+                return log;
+            }
+            catch (Exception e)
+            {
+                //Console.WriteLine(e);
+                return "Reading file failed, try again";
+            }
+           
         }
 
-        public string getHistory()
+        public List<Transaction> GetMinTransactions()
         {
-            
+            var timeNow = DateTime.Now;
+            var transactions = from x in listTransactions
+                where (timeNow - x.TransactionDateTime).TotalMinutes <= 1
+                select x;
+            return (List<Transaction>)transactions;
         }
+        public List<Transaction> GetMinTransactions(int id)
+        {
+            var timeNow = DateTime.Now;
+            var transactions = from x in listTransactions
+                where (timeNow - x.TransactionDateTime).TotalMinutes <= 1 
+                && (x.CarId == id)
+                select x;
+            return (List<Transaction>)transactions;
+        }
+
         public void GetPay()
         {
             foreach (var i in CarList)
@@ -149,6 +197,44 @@ namespace SharpTask1
 
                 }
             }
+        }
+
+        public List<Car> AllCarList()
+        {
+            List<Car> Cars = new List<Car>();
+            foreach (var x in CarList)
+            {
+                Cars.Add(x.Value);
+            }
+            return Cars;
+        }
+        public Car GetCar(int id)
+        {
+            Car car = CarList[id];
+            return car;
+        }
+
+        public void DeleteCar(int carid)
+        {
+            try
+            {
+                if (!debts.ContainsKey(carid))
+                {
+                    
+                    CarList.Remove(carid);    
+                    freePlaces += 1;
+
+                }
+                else
+                {
+                    Console.WriteLine("Car cant be deleted. Chack your balance.");
+                }
+            }            
+            catch (Exception e)
+            {
+                Console.WriteLine("There no such car");
+            }
+            
         }
     }
 }

@@ -4,8 +4,16 @@ namespace SharpTask1
 {
     public class Car
     {
-        //private int _ballanse;
-        public float Ballanse { get; set; }
+        private float _ballanse;
+        public float Ballanse
+        {
+            get { return _ballanse;}
+            set
+            {
+                if (value >= 0)
+                    _ballanse = value;
+            }   
+        }
         public readonly CarType.carTypes TypeOfCar;
         public int CarId;
 
