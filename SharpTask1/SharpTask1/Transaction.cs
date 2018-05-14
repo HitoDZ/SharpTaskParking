@@ -15,8 +15,5 @@ namespace SharpTask1
             Pay = pay;
             TransactionDateTime = DateTime.Now;
         }
-
-
-
     }
 }

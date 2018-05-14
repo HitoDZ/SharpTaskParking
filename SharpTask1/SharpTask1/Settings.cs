@@ -12,7 +12,7 @@ namespace SharpTask1
         public Settings()
         {
             Fine = 5;
-            Timeout = 3;
+            Timeout = 10000000;
             Price = new Dictionary<CarType.carTypes, float>()
             {
                 {CarType.carTypes.BUSS, 2},

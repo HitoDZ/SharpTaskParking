@@ -4,7 +4,10 @@ using System.Data.Common;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
+using System.Security.Cryptography;
 using System.Xml.Schema;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace SharpTask1
 {
@@ -14,7 +17,7 @@ namespace SharpTask1
         Object locker = new Object();
         static string path = System.IO.Directory.GetCurrentDirectory() + "\\Transaction.log";
         public int freePlaces;
-        private Settings _settings =new Settings();
+        public Settings _settings =new Settings();
         protected List<Transaction> listTransactions = new List<Transaction>();
        
         protected Dictionary<int, Car> CarList = new Dictionary<int, Car>();
@@ -87,11 +90,14 @@ namespace SharpTask1
                 }
                 catch (Exception e)
                 {
+                   // Console.WriteLine(car.CarId);
                     Console.WriteLine("Car is not valid");
                 }
             }
 
         }
+
+    
         public void DeleteCar(Car car)
         {
             try
@@ -118,17 +124,29 @@ namespace SharpTask1
         public void Log()
         {
             float sum = 0;
-            foreach (var i in listTransactions)
-            {
-                sum += i.Pay;
-            }
-            using (StreamWriter sw = new StreamWriter(path, true, System.Text.Encoding.Default))
-            {
-                string text = DateTime.Now.ToString() + " - " + sum;
-                sw.WriteLine(text);
+            var timeNow = DateTime.Now;
+            var transactions = (from x in listTransactions
+                where (timeNow - x.TransactionDateTime).TotalMinutes > 1
+                select x).ToList<Transaction>();
+            
+                foreach (var i in transactions)
+                {
+                    sum += i.Pay;
+                
+                }
+                using (StreamWriter sw = new StreamWriter(path, true, System.Text.Encoding.Default))
+                {
+                    string text = DateTime.Now.ToString() + " - " + sum;
+                    sw.WriteLine(text);
                     
-            }
-            listTransactions.Clear();// TODO: ask about transaction
+                }
+
+                foreach (var x in transactions)
+                {
+                    listTransactions.Remove(x);
+                }
+            
+            //listTransactions.Clear();
         }
         public string TransactionLog()
         {
@@ -153,19 +171,19 @@ namespace SharpTask1
         public List<Transaction> GetMinTransactions()
         {
             var timeNow = DateTime.Now;
-            var transactions = from x in listTransactions
+            var transactions = (from x in listTransactions
                 where (timeNow - x.TransactionDateTime).TotalMinutes <= 1
-                select x;
-            return (List<Transaction>)transactions;
+                select x).ToList<Transaction>();
+            return transactions;
         }
         public List<Transaction> GetMinTransactions(int id)
         {
             var timeNow = DateTime.Now;
-            var transactions = from x in listTransactions
+            var transactions = (from x in listTransactions
                 where (timeNow - x.TransactionDateTime).TotalMinutes <= 1 
                 && (x.CarId == id)
-                select x;
-            return (List<Transaction>)transactions;
+                select x).ToList<Transaction>();
+            return transactions;
         }
 
         public void GetPay()
@@ -235,6 +253,24 @@ namespace SharpTask1
                 Console.WriteLine("There no such car");
             }
             
+        }
+        public async Task PeriodicPayAsync(TimeSpan interval)
+        {
+            while (true)
+            {
+                GetPay();
+                Console.WriteLine(Balance);
+                await Task.Delay(TimeSpan.FromTicks(_settings.Timeout));
+            }
+        }
+        public async Task PeriodicLogAsync(TimeSpan interval)
+        {
+            while (true)
+            {
+                Log();
+                Console.WriteLine(TransactionLog());
+                await Task.Delay(TimeSpan.FromTicks(_settings.Timeout*100));
+            }
         }
     }
 }
