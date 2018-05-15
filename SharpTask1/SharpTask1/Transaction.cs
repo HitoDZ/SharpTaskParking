@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace SharpTask1
 {
@@ -14,6 +15,5 @@ namespace SharpTask1
             Pay = pay;
             TransactionDateTime = DateTime.Now;
         }
-        
     }
 }

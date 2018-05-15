@@ -5,14 +5,14 @@ namespace SharpTask1
     public class Settings
     {
         public int ParkingSpace { get; set; }
-        public int Fine { get; set; }
-        public int Timeout { get; set; }
+        public int Fine { get; set; } // Налог
+        public int Timeout { get; set; } // Time when we take a money
         public Dictionary<CarType.carTypes, float> Price;
 
         public Settings()
         {
             Fine = 5;
-            Timeout = 3;
+            Timeout = 10000000;
             Price = new Dictionary<CarType.carTypes, float>()
             {
                 {CarType.carTypes.BUSS, 2},

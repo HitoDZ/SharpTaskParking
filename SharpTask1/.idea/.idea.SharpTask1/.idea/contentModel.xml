@@ -5,9 +5,11 @@
     <e p="D:\University\BinaryStudio\C#\1Task\SharpTaskParking\SharpTask1" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="SharpTask1" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Car.cs" t="Include" />
         <e p="CarType.cs" t="Include" />
+        <e p="Menu.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Parking.cs" t="Include" />
         <e p="Program.cs" t="Include" />
